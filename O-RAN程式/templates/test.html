@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用者輸入表單</title>
+    <script>
+        function showFields() {
+            var interfaceSelect = document.getElementById("interface");
+            var selectedInterface = interfaceSelect.value;
+
+            var sPlaneFields = document.getElementById("s_plane");
+            var c_plane_type1 = document.getElementById("c_plane_type1");
+            var c_plane_type3 = document.getElementById("c_plane_type3");
+            var u_plane = document.getElementById("u_plane");
+            // var m_plane = document.getElementById("m_plane");
+            sPlaneFields.style.display = "none";
+            c_plane_type1.style.display = "none";
+            c_plane_type3.style.display = "none";
+            u_plane.style.display = "none";
+            // m_plane.style.display = "none";
+            if (selectedInterface == "s_plane") {
+                sPlaneFields.style.display = "block";
+            } else if (selectedInterface == "c_plane_type1") {
+                c_plane_type1.style.display = "block";
+            } else if (selectedInterface == "c_plane_type3") {
+                c_plane_type3.style.display = "block";
+            } else if (selectedInterface == "u_plane") {
+                u_plane.style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>選擇介面並輸入數值</h1>
+    <!-- <form id="mainform" action="/process_data" method="post"> -->
+    <label for="interface">選擇介面：</label>
+    <select id="interface" name="interface" onchange="showFields()" required>
+            <option value="s_plane">s_plane</option>
+            <option value="c_plane_type1">c_plane_type1</option>
+            <option value="c_plane_type3">c_plane_type3</option>
+            <option value="u_plane">u_plane</option>
+        </select> {% include 's_plane.html' %} {% include 'c_plane_type1.html' %} {% include 'c_plane_type3.html' %} {% include 'u_plane.html' %}
+
+    <!-- </form> -->
+</body>
+
+</html>

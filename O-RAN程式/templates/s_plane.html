@@ -1,0 +1,66 @@
+<div id="s_plane" style="display:none;">
+    <form action="/process_data/s_plane" method="post">
+        <!-- 額外的資訊 -->
+        <p>請輸入 s_plane 相關資訊：</p>
+        <label for="majorSdoID">majorSdoID：</label>
+        <input type="text" name="majorSdoID">
+        <br>
+        <!-- 添加其他 s_plane 欄位 -->
+        <label for="messageType">messageType：</label>
+        <input type="text" name="messageType">
+        <br>
+        <label for="reserved_1">reserved_1：</label>
+        <input type="text" name="reserved_1">
+        <br>
+        <label for="minorversionPTP">minorversionPTP：</label>
+        <input type="text" name="minorversionPTP">
+        <br>
+        <label for="versionPTP">versionPTP：</label>
+        <input type="text" name="versionPTP">
+        <br>
+        <label for="messageLength">messageLength：</label>
+        <input type="text" name="messageLength">
+        <br>
+        <label for="domainNumber">domainNumber：</label>
+        <input type="text" name="domainNumber">
+        <br>
+        <label for="reserved_2">reserved_2：</label>
+        <input type="text" name="reserved_2">
+        <br>
+        <label for="flags">flags：</label>
+        <input type="text" name="flags">
+        <br>
+        <label for="correctionField">correctionField：</label>
+        <input type="text" name="correctionField">
+        <br>
+        <label for="reserved_3">reserved_3：</label>
+        <input type="text" name="reserved_3">
+        <br>
+        <label for="sourcePortIdentity">sourcePortIdentity：</label>
+        <input type="text" name="sourcePortIdentity">
+        <br>
+        <label for="sequenceId">sequenceId：</label>
+        <input type="text" name="sequenceId">
+        <br>
+        <label for="control">control：</label>
+        <input type="text" name="control">
+        <br>
+        <label for="logMeanMessageInterval">logMeanMessageInterval：</label>
+        <input type="text" name="logMeanMessageInterval">
+        <br>
+        <label for="originTimestamp_second">originTimestamp_second：</label>
+        <input type="text" name="originTimestamp_second">
+        <br>
+        <label for="originTimestamp_nanosecond">originTimestamp_nanosecond：</label>
+        <input type="text" name="originTimestamp_nanosecond">
+        <br>
+        <label for="speed">Select Speed:</label>
+        <select name="speed" id="speed">
+        <option value="10"M>10M</option>
+        <option value="100"M>100M</option>
+        <option value="1000"M>1000M</option>
+    </select>
+
+        <button type="submit">Send Packets</button>
+    </form>
+</div>

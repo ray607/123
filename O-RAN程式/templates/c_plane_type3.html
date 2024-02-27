@@ -1,0 +1,109 @@
+<div id="c_plane_type3" style="display:none;">
+    <form action="/process_data/c_plane_type3" method="post">
+        <!-- 額外的資訊 -->
+        <p>請輸入 c_plane 相關資訊：</p>
+        <label for="pc_id">pc_id：</label>
+        <input type="text" name="pc_id">
+        <br>
+        <!-- 添加其他 s_plane 欄位 -->
+        <label for="seq_id">seq_id：</label>
+        <input type="text" name="seq_id">
+        <br>
+        <label for="dataDirection">dataDirection：</label>
+        <input type="text" name="dataDirection">
+        <br>
+        <label for="payloadVersion">payloadVersion：</label>
+        <input type="text" name="payloadVersion">
+        <br>
+        <label for="filterIndex">filterIndex：</label>
+        <input type="text" name="filterIndex">
+        <br>
+        <label for="frameId">frameId：</label>
+        <input type="text" name="frameId">
+        <br>
+        <label for="subframeId">subframeId：</label>
+        <input type="text" name="subframeId">
+        <br>
+        <label for="slotId">slotId：</label>
+        <input type="text" name="slotId">
+        <br>
+        <label for="startSymbolid">startSymbolid：</label>
+        <input type="text" name="startSymbolid">
+        <br>
+        <label for="numberOfsections">numberOfsections：</label>
+        <input type="text" name="numberOfsections">
+        <br>
+        <label for="sectionType">sectionType：</label>
+        <input type="text" name="sectionType" value="3" readonly>
+        <br>
+        <label for="timeOffset">timeOffset：</label>
+        <input type="text" name="timeOffset">
+        <br>
+        <label for="frameStructure">frameStructure：</label>
+        <input type="text" name="frameStructure">
+        <br>
+        <label for="cpLength">cpLength：</label>
+        <input type="text" name="cpLength">
+        <br>
+        <label for="udCompHdr">udCompHdr：</label>
+        <input type="text" name="udCompHdr">
+        <br>
+
+        <label for="sectionId">sectionId：</label>
+        <input type="text" name="sectionId">
+        <br>
+        <label for="rb">rb：</label>
+        <input type="text" name="rb">
+        <br>
+        <label for="symInc">symInc：</label>
+        <input type="text" name="symInc">
+        <br>
+        <label for="startPrbc">startPrbc：</label>
+        <input type="text" name="startPrbc">
+        <br>
+        <label for="numPrbc">numPrbc：</label>
+        <input type="text" name="numPrbc">
+        <br>
+        <label for="reMask">reMask：</label>
+        <input type="text" name="reMask">
+        <br>
+        <label for="numSymbol">numSymbol：</label>
+        <input type="text" name="numSymbol">
+        <br>
+        <label for="ef">ef：</label>
+        <input type="text" name="ef">
+        <br>
+        <label for="beamId">beamId：</label>
+        <input type="text" name="beamId">
+        <br>
+        <label for="frequencyOffset">frequencyOffset：</label>
+        <input type="text" name="frequencyOffset">
+        <br>
+        <label for="reserved">reserved：</label>
+        <input type="text" name="reserved">
+        <br>
+        <label for="protocol_revision">protocol_revision：</label>
+        <input type="text" name="protocol_revision">
+        <br>
+        <label for="reserved_1">reserved_1：</label>
+        <input type="text" name="reserved_1">
+        <br>
+        <label for="c_bit">c_bit：</label>
+        <input type="text" name="c_bit">
+        <br>
+        <label for="message_type">message_type：</label>
+        <input type="text" name="message_type">
+        <br>
+        <label for="payload_size">payload_size：</label>
+        <input type="text" name="payload_size" value="28" readonly>
+        <br>
+        <label for="speed">Select Speed:</label>
+        <select name="speed" id="speed">
+        <option value="10"M>10M</option>
+        <option value="100"M>100M</option>
+        <option value="1000"M>1000M</option>
+    </select>
+
+        <button type="submit">Send Packets</button>
+    </form>
+</div>
