@@ -1,1 +1,2 @@
-# 123
+# gcc -o send send.c -lpcap
+# ./send
