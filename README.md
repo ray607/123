@@ -15,4 +15,4 @@ To compile the program, open your terminal, navigate to the directory containing
 ```sh
 gcc -o send send.c -lpcap
 ./send
-```sh
+
